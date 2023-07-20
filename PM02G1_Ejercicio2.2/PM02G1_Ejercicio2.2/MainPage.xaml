@@ -18,7 +18,8 @@
         </Frame>
 
         <!-- Entry para ingresar nuevos elementos -->
-        <Entry x:Name="newItemEntry" Placeholder="Ingrese un nuevo elemento" />
+        <Entry x:Name="txtId" Placeholder="Ingrese un nuevo ID" />
+       
 
         <!-- ListView para mostrar los elementos -->
         <ListView x:Name="itemsListView">
@@ -26,14 +27,14 @@
                 <!-- DataTemplate personalizado con línea separadora -->
                 <DataTemplate>
 
-                    <TextCell Text="{Binding Title}" Detail="{Binding Body}"/>
+                    <TextCell Text="{Binding Id} " Detail="{Binding Body}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
         <!-- Botón para agregar un nuevo elemento -->
-        <Button Text="Agregar" Clicked="OnAddItemButtonClicked" />
-        <Button Text="Cargar Api" Clicked="CargarApi" />
+        <Button Text="consultar individual" Clicked="OnAddItemButtonClicked" />
+        <Button Text="Cargar toda el API" Clicked="CargarApi" />
     </StackLayout>
 
 </ContentPage>

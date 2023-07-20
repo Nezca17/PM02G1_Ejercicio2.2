@@ -25,18 +25,15 @@
             <ListView.ItemTemplate>
                 <!-- DataTemplate personalizado con línea separadora -->
                 <DataTemplate>
-                    <ViewCell>
-                        <StackLayout>
-                            <Label Text="{Binding}" />
-                            <BoxView Style="{StaticResource SeparatorLineStyle}" />
-                        </StackLayout>
-                    </ViewCell>
+
+                    <TextCell Text="{Binding title}" Detail="{Binding body}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
 
         <!-- Botón para agregar un nuevo elemento -->
         <Button Text="Agregar" Clicked="OnAddItemButtonClicked" />
+        <Button Text="Cargar Api" Clicked="CargarApi" />
     </StackLayout>
 
 </ContentPage>

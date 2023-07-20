@@ -26,7 +26,7 @@
                 <!-- DataTemplate personalizado con línea separadora -->
                 <DataTemplate>
 
-                    <TextCell Text="{Binding title}" Detail="{Binding body}"/>
+                    <TextCell Text="{Binding Title}" Detail="{Binding Body}"/>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
